@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="ro">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Happy Spring, Oana 🤍</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Special+Elite&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+margin:0;
+font-family:Inter, sans-serif;
+color:#1b1b1b;
+background:#f5efe6;
+}
+
+.hero{
+width:100%;
+height:60vh;
+background-image:url("family.jpg");
+background-size:cover;
+background-position:center;
+}
+
+.card{
+max-width:900px;
+margin:-120px auto 60px auto;
+background:white;
+padding:40px;
+border-radius:20px;
+box-shadow:0 20px 60px rgba(0,0,0,0.15);
+line-height:1.7;
+}
+
+.title{
+font-family:"Special Elite";
+font-size:26px;
+margin-bottom:20px;
+}
+
+.msg{
+white-space:pre-wrap;
+font-size:17px;
+}
+
+.signature{
+margin-top:30px;
+padding-top:20px;
+border-top:1px dashed #ddd;
+}
+
+.hand{
+font-family:Caveat;
+font-size:30px;
+}
+
+button{
+margin-top:20px;
+padding:10px 18px;
+border-radius:30px;
+border:1px solid #ddd;
+background:white;
+cursor:pointer;
+}
+
+#yt{
+position:absolute;
+width:1px;
+height:1px;
+left:-9999px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="hero"></div>
+
+<div class="card">
+
+<div class="title">Pentru Oana</div>
+
+<div class="msg">
+
+Draga mea Oana,
+
+Sper sa gasesti mesajul asta intr-un moment in care esti libera de griji si activitati 😊 — ca sa-l citesti in liniste.
+
+Stiu ca ideea de a primi un mesaj printr-un QR code nu ti se parea nici prea personala, nici prea traditionala si cumva iti incalca principiile… dar cum nu mai esti in postura de client, ci de fina mea, mi-am permis sa-ti las aici cateva ganduri. Pentru Martisor. Si pentru Ziua Mamei, ca tot vine. Si pentru ca… cum as fi putut lasa nebifata “familia de fete dragi mie”, Gheboianu? 🤍
+
+Tu, ca mama, esti o forta imensa. Genul de forta care muta muntii din loc pentru fetele ei.
+
+Ai trecut prin multe… si totusi ti-ai pastrat zambetul.
+
+Stiu ca uneori ai vrea sa plangi — si e perfect ok. Oamenii puternici plang si ei.
+
+Doar ca apoi se ridica din nou si merg mai departe.
+
+Te admir foarte tare.
+
+Admir cum iti prioritizezi familia.
+
+Admir frumusetea ta naturala.
+
+Admir felul in care spui “nu” si iti protejezi spatiul.
+
+Dar rabdarea ta… e pe locul 1.
+
+Acolo esti de neegalat.
+
+Esti o minune de om.
+
+Si sa nu uiti niciodata:
+
+esti super puternica.
+
+Ma bucur sa te am in viata mea.
+
+</div>
+
+<div class="signature">
+
+<div class="hand">Cu drag, cu timp, cu suflet, Miha</div>
+
+<button onclick="playMusic()">Porneste muzica</button>
+
+</div>
+
+</div>
+
+<div id="yt"></div>
+
+<script>
+
+var tag=document.createElement('script');
+tag.src="https://www.youtube.com/iframe_api";
+document.body.appendChild(tag);
+
+var player;
+
+function onYouTubeIframeAPIReady(){
+player=new YT.Player('yt',{
+videoId:'gU1e3DiWMxs',
+playerVars:{autoplay:1, mute:1}
+});
+}
+
+function playMusic(){
+player.unMute();
+player.playVideo();
+}
+
+</script>
+
+</body>
+</html>
